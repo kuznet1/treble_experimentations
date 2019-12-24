@@ -407,8 +407,7 @@ function init_patches() {
             sed -i -E '/external\/exfat/d' .repo/local_manifests/manifest.xml
         fi
 
-        # should I do this? will it interfere with building non-gapps images?
-        # rm -f .repo/local_manifests/opengapps.xml
+        rm -f .repo/local_manifests/opengapps.xml
     fi
 }
 
